@@ -1,3 +1,3 @@
-def sort_array_ac(num)
-  num.each do |n| n.sort
+def sort_array_asc(num)
+  num.sort
 end
