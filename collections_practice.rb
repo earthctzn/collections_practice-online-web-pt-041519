@@ -18,12 +18,15 @@ def reverse_array(num)
   num.reverse 
 end
 
-def kesha_maker(num)
-  num.collect do |word|
-    word[2] = "$"
-    word
+def kesha_maker(array)
+  kesha = []
+    array.each do |word|
+      word_array = word.split ""
+      word_array[2] = "$"
+      kesha << word_array.join
+    end
+    kesha
   end
-end
 
 def find_a(arr)
   new_array = []
