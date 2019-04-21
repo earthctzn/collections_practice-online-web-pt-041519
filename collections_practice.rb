@@ -18,21 +18,21 @@ def reverse_array(num)
   num.reverse 
 end
 
-def kesha_maker(array)
-  array.collect do |word|
+def kesha_maker(num)
+  num.collect do |word|
     word[2] = "$"
     word
   end
 end
 
-def find_a(array)
-  a_array = []
-  array.each do |word|
+def find_a(arr)
+  new_array = []
+  arr.each do |word|
     if word.start_with?("a")
-      a_array << word
+      new_array << word
     end
   end
-  a_array
+  new_array
 end
 
 def sum_array(array)
