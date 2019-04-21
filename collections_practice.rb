@@ -11,7 +11,7 @@ def sort_array_char_count(num)
 end
 
 def swap_elements(num)
-  
+  num.sort_by { |n| n.scan(/\d+/).first.to_i }
 end
 
 def reverse_array(num)
